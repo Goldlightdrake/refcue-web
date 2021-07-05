@@ -1,0 +1,12 @@
+.privacy-policy {
+  height: 100vh;
+  color: white;
+  margin: 50px 100px 100px 100px;
+  font-family: "Montserrat", sans-serif;
+}
+
+p {
+  font-size: 4em;
+  font-weight: bold;
+  text-align: center;
+}
