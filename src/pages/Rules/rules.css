@@ -1,0 +1,18 @@
+.logo-rules {
+  width: 30vh;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+}
+
+.text-rules {
+  color: white;
+  text-align: center;
+  margin-top: 3rem;
+  font-size: 2rem;
+}
+
+#rules {
+  height: 50vh;
+}
