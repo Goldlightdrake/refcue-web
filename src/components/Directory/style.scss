@@ -1,0 +1,61 @@
+.directory {
+  height: 100%;
+  .directory-wrapper {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(58, 55, 55);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .logo {
+      width: 45rem;
+      padding-left: 20px;
+      padding-right: 20px;
+      margin: 0 5rem 10rem 5rem;
+    }
+
+    .shop-button {
+      display: block;
+      width: 200px;
+      height: 60px;
+      line-height: 60px;
+      font-size: 18px;
+      text-decoration: none;
+      font-weight: bold;
+      color: rgb(29, 29, 29);
+      border: 2px solid #333;
+      letter-spacing: 2px;
+      text-align: center;
+      position: relative;
+      transition: all 0.35s;
+      background: #ffc107;
+      border-radius: 12px;
+
+      span {
+        position: relative;
+        z-index: 2;
+      }
+
+      &:after {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        background: #58430256;
+        transition: all 0.35s;
+      }
+
+      &:hover {
+        color: white;
+      }
+
+      &:hover:after {
+        width: 100%;
+      }
+    }
+  }
+}
