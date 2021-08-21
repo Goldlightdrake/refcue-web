@@ -2,16 +2,16 @@ import React from "react";
 import Logo from "./../../assets/logo_dark.png";
 import "./style.scss";
 
+import Button from "../forms/Button";
+
 const Directory = (props) => {
   return (
     <div className="directory">
       <div className="directory-wrapper">
-        <img src={Logo} className="logo"></img>
-        <div className="button-container">
-          <a href="/" className="shop-button">
-            Sklep
-          </a>
-        </div>
+        <img src={Logo} className="logo" alt="refcue-logo"></img>
+        <a href="/">
+          <Button>Sklep</Button>
+        </a>
       </div>
     </div>
   );

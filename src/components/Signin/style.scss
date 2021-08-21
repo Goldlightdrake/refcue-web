@@ -1,0 +1,19 @@
+.formWrap {
+  .socialSignIn {
+    margin-top: 2rem;
+  }
+  Button {
+    width: 100%;
+  }
+
+  .recoveryWrap {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 1.7rem;
+    height: 6rem;
+    a {
+      color: white;
+    }
+  }
+}
