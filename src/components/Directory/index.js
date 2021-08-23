@@ -9,7 +9,7 @@ const Directory = (props) => {
     <div className="directory">
       <div className="directory-wrapper">
         <img src={Logo} className="logo" alt="refcue-logo"></img>
-        <a href="/">
+        <a href="/sklep">
           <Button>Sklep</Button>
         </a>
       </div>

@@ -13,7 +13,7 @@ const mapState = (state) => ({
   product: state.productsData.product,
 });
 
-const ProductCard = ({}) => {
+const ProductCard = () => {
   const dispatch = useDispatch();
   const history = useHistory();
   const { productID } = useParams();
@@ -53,6 +53,12 @@ const ProductCard = ({}) => {
             <span>{productPrice} PLN</span>
           </li>
           <li>
+            <span
+              className="desc"
+              dangerouslySetInnerHTML={{ __html: productDesc }}
+            />
+          </li>
+          <li>
             <div className="addToCart">
               <Button
                 {...configAddToCartBtn}
@@ -61,12 +67,6 @@ const ProductCard = ({}) => {
                 Dodaj to koszyka
               </Button>
             </div>
-          </li>
-          <li>
-            <span
-              className="desc"
-              dangerouslySetInnerHTML={{ __html: productDesc }}
-            />
           </li>
         </ul>
       </div>

@@ -25,7 +25,7 @@ const ProductResults = ({}) => {
 
   const handleFilter = (e) => {
     const nextFilter = e.target.value;
-    history.push(`/szukaj/${nextFilter}`);
+    history.push(`/sklep/${nextFilter}`);
   };
 
   if (!Array.isArray(data)) return null;
@@ -72,8 +72,6 @@ const ProductResults = ({}) => {
 
   return (
     <div className="products">
-      <h1>Pokaż produkty</h1>
-
       <FormSelect {...configFilters} />
 
       <div className="productResults">

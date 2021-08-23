@@ -1,7 +1,7 @@
 import "./default.scss";
 import React, { useEffect } from "react";
 import { useDispatch } from "react-redux";
-import { Switch, Route } from "react-router-dom";
+import { Route } from "react-router-dom";
 import { checkUserSession } from "./redux/User/user.actions";
 
 import AdminToolbar from "./components/AdminToolbar";
@@ -18,7 +18,7 @@ import DashboardLayout from "./layouts/DashboardLayout";
 //pages
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import Homepage from "./pages/Homepage";
-import Search from "./pages/Search";
+import Shop from "./pages/Shop";
 import Registration from "./pages/Registration";
 import Login from "./pages/Login";
 import Recovery from "./pages/Recovery";
@@ -49,18 +49,18 @@ const App = (props) => {
       />
       <Route
         exact
-        path="/szukaj"
+        path="/sklep"
         render={() => (
           <MainLayout>
-            <Search />
+            <Shop />
           </MainLayout>
         )}
       />
       <Route
-        path="/szukaj/:filterType"
+        path="/sklep/:filterType"
         render={() => (
           <MainLayout>
-            <Search />
+            <Shop />
           </MainLayout>
         )}
       />
